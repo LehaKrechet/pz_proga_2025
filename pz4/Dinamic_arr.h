@@ -1,6 +1,7 @@
 class Dinamic_arr{
-    int* array;
-    int size;
+    protected:
+        int* array;
+        int size;
     public:
         //Конструктор
         Dinamic_arr(int s){
@@ -30,7 +31,7 @@ class Dinamic_arr{
         //Вычитане
         void sub(Dinamic_arr&arr);
         //Деструктор
-        ~Dinamic_arr(){
+        virtual ~Dinamic_arr(){
             delete[] array;
         }
 
