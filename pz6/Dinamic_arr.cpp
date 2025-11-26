@@ -23,9 +23,9 @@ void Dinamic_arr::set_element(int data, int index){
     if (index>=0 && index<size && data > -100 && data < 100){
         array[index] = data;
     }else if (data > -100 && data < 100){
-        throw std::out_of_range("Неправильный индекс");
+        throw std::out_of_range("Index out of range");
     }else{
-        throw std::invalid_argument("Значение вне промежутка");
+        throw std::invalid_argument("Invalid argument");
     }
 }
 void Dinamic_arr::add_element(int data){

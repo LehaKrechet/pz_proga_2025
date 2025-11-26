@@ -6,8 +6,10 @@ int main(){
     for(int i = 0; i<5;i++){
         arrA.set_element(i, i);
     }
-    arrA.set_element(500, 3);
-    std::cout << arrA.get_ellement(1);
-
+    try{
+        arrA.set_element(100, 30);
+    }catch  (std::exception& e){
+        std::cout << e.what() << std::endl;
+    }
 
 }
