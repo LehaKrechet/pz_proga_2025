@@ -7,7 +7,7 @@ int main(){
         arrA.set_element(i, i);
     }
     try{
-        arrA.set_element(100, 30);
+        arrA.set_element(200, 3);
     }catch  (std::exception& e){
         std::cout << e.what() << std::endl;
     }
