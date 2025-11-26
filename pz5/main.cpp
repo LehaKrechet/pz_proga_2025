@@ -15,9 +15,4 @@ int main(){
         arrays[i]->save_to_file();
         delete arrays[i];
     }
-
-
-    
-    
-
 }
